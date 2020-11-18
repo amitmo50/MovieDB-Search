@@ -1,0 +1,84 @@
+.topBar-container {
+    /* position: fixed; */
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    background-color: #595b83;
+}
+.topBar-icon {
+    float: left;
+}
+.movieDB-title {
+    width: 20%;
+}
+.movieDB-title h1{
+    margin: 1% 0 1% 0;
+    font-size: 2rem;
+    font-family: 'Fredoka One', cursive;
+    color: #fff;
+
+}
+.searchBar-container {
+    width: 100%;
+    margin: 0.7% 0 0.7% 0;
+}
+.search-form{
+    float: right;
+    width:80%;
+}
+.topBar-container input[type=text] {
+    padding: 6px;
+    width:90%;
+    font-size: 17px;
+    border: none;
+}
+
+.topBar-container button {
+    padding: 6px 10px;
+    margin-right: 16px;
+    background: #fff;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .topBar-icon {
+        height: 40px;
+    }
+    .topBar-icon img{
+        width:40px;
+    }
+    .movieDB-title {
+        width: 100%;
+        position:absolute;
+    }
+    .movieDB-title h1{
+        font-size: 1.6rem;
+        width: 100%;
+    }
+    .topBar-container {
+        width: 100%;
+        height: 70px;
+    }
+    .searchBar-container .search-form{
+        height: 20px;
+        width: 100%;
+    }
+    .searchBar-container {
+        position: relative;
+        top: 40px;
+        right: 2%;
+        height: 35px;
+    }
+    .topBar-container input[type=text] {
+        padding: 2px;
+        width:85%;
+    }
+    
+    .topBar-container button {
+        padding: 2px 2px;
+    }
+
+    
+}

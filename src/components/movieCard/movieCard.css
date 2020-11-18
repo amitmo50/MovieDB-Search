@@ -1,0 +1,113 @@
+.flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 400px;
+    perspective: 1000px;
+    margin: 2%;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 #f4abc4;
+
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #ce6262;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #ce6262;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.movie-ploat {
+    font-size: 1rem;
+    padding: 3%;
+    font-family: 'Fredoka One', cursive;
+}
+.flip-card-front img {
+    width: 500px;
+    height: 400px;
+}
+.movie-name {
+    margin: 1% 0 1% 0;
+    font-family: 'Fredoka One', cursive;
+}
+
+.control-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.trailer-btn{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    width: 15%;
+    padding: 1%;
+    margin:1%;
+    color:#fff;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border:solid 2px #fff;
+    border-radius: 5px;
+}
+
+.view-btn{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    width: 15%;
+    padding: 1%;
+    margin:1%;
+    color:#fff;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border:solid 2px #fff;
+    border-radius: 5px;
+}
+@media screen and (max-width: 800px) and (min-width: 300px){
+    .flip-card {
+        width: 300px;
+        height: 200px;
+    }
+
+    .flip-card-front img {
+        width: 300px;
+        height: 200px;
+    }
+    .movie-name {
+        font-size: 1.1rem;
+        margin: 1% 0 0 0;
+    }
+    .movie-ploat {
+        font-size: 0.5rem; 
+        padding: 0 1% 0 1%;
+    }
+}
